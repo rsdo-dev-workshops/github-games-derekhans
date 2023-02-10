@@ -1,0 +1,26 @@
+[1mdiff --git a/texture.jpg b/images/texture.jpg[m
+[1msimilarity index 100%[m
+[1mrename from texture.jpg[m
+[1mrename to images/texture.jpg[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 87e71f8..d8be81b 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -6,7 +6,7 @@[m
+     body      { font-family: Helvetica, sans-serif; }[m
+     #tetris   { margin: 1em auto; padding: 1em; border: 4px solid black; border-radius: 10px; background-color: #F8F8F8; }[m
+     #stats    { display: inline-block; vertical-align: top; }[m
+[31m-    #canvas   { display: inline-block; vertical-align: top; background: url(texture.jpg); box-shadow: 10px 10px 10px #999; border: 2px solid #333; }[m
+[32m+[m[32m    #canvas   { display: inline-block; vertical-align: top; background: url(images/texture.jpg); box-shadow: 10px 10px 10px #999; border: 2px solid #333; }[m
+     #menu     { display: inline-block; vertical-align: top; position: relative; }[m
+     #menu p   { margin: 0.5em 0; text-align: center; }[m
+     #menu p a { text-decoration: none; color: black; }[m
+[36m@@ -75,7 +75,7 @@[m
+         ctx     = canvas.getContext('2d'),[m
+         ucanvas = get('upcoming'),[m
+         uctx    = ucanvas.getContext('2d'),[m
+[31m-        speed   = { start: 0.6, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)[m
+[32m+[m[32m        speed   = { start: 0.3, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)[m
+         nx      = 10, // width of tetris court (in blocks)[m
+         ny      = 20, // height of tetris court (in blocks)[m
+         nu      = 5;  // width/height of upcoming preview (in blocks)[m
